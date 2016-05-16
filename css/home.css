@@ -1,0 +1,539 @@
+/**
+ * Theme CSS Styles
+ */
+
+/*****************************
+ *  # THEME COLOR
+ * background color: #EEEEEE;
+ * panel article: #41B7D8; blue
+ * panel article: #3DCA25; green
+ * footer background: #1F1F1F;
+ * bottom background: #161616;
+ * color footer: #697C8E;
+ *****************************/
+
+
+
+
+/*****************************
+ *  # GENERAL
+ *****************************/
+.container {
+    max-width: 960px;
+}
+
+
+
+/**
+ * Fix thumbnail image scale to fit
+ */
+.thumbnail img {
+    min-width: 100%;
+}
+
+/**
+ * Fix 5 collumns responsive bootstrap
+ */
+.col-xs-5c,
+.col-sm-5c,
+.col-md-5c,
+.col-lg-5c {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5c {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5c {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5c {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5c {
+        width: 20%;
+        float: left;
+    }
+}
+
+/**
+ * Fix 7 collumns responsive bootstrap for social link in footer section
+ */
+.col-xs-7c,
+.col-sm-7c,
+.col-md-7c,
+.col-lg-7c {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-7c {
+    width: 14.28%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-7c {
+        width: 14.28%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-sm-7c {
+        width: 14.28%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-sm-7c {
+        width: 14.28%;
+        float: left;
+    }
+}
+
+/***********************************************
+ * # HEADER
+ ***********************************************/
+#frg-header nav {
+    margin-bottom: 0;
+    min-height: 40px !important;
+    background: #fff !important;
+    border: none !important;
+}
+
+#frg-header nav .navbar-nav {
+    min-height: 40px !important;
+}
+
+#frg-header .navbar-collapse {
+    padding-left: 0 !important;
+}
+
+#frg-header .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 25px;
+    line-height: 20px;
+    color: #aaa;
+    font-size: 12px !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #fff !important;
+    letter-spacing: 0.1px;
+}
+
+#frg-header .navbar-nav > li > a:hover {
+    color: #41B7D8;
+    transition: 0.3s;
+}
+
+/**
+ * [fix navbar collapse]
+ */
+@media (max-width: 767px) {
+  #frg-header .navbar-nav {
+    float: left;
+    margin-left: 10px;
+  }
+}
+
+/*====================================================
+ * =================== GENERAL
+ =====================================================*/
+body {
+    font-family: 'Open Sans';
+}
+
+.container-fluid {
+    max-width: 1200px;
+}
+
+
+
+/****************************************************
+ * MAIN CONTENT
+ ****************************************************/
+.tt-main {
+    background: #F6F8F8;
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
+/*====================================================
+ * =================== BANNER
+ =====================================================*/
+.tt-banner {
+    background: #4A82BA;
+    padding: 50px 0px;
+}
+
+.tt-banner .well {
+    background: #4A82BA !important;
+    color: #eee;
+    font-weight: 300;
+    border: none;
+    padding: 0;
+}
+
+.tt-banner .well h1 {
+    font-weight: 300;
+}
+
+.tt-banner .well p {
+    max-width: 500px;
+    font-size: 16px;
+}
+
+/*====================================================
+ * =================== PRIMARY
+ =====================================================*/
+.tt-content {
+    color: #575a5b;
+}
+
+/*====================================================
+ * =================== BREADCRUMB
+ =====================================================*/
+.tt-breadcrumb {
+    padding: 20px 0px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tt-breadcrumb ul {
+    padding: 0;
+    margin: 0;
+}
+
+.tt-breadcrumb ul li a {
+    font-weight: 600;
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+.tt-breadcrumb ul li a:hover {
+    color: #135673;
+    transition: 0.4s;
+}
+
+.tt-breadcrumb ul li.active {
+    color: #595959;
+    font-weight: 600;
+}
+
+/*====================================================
+ * =================== COURSES
+ =====================================================*/
+.tt-course {
+    padding-bottom: 20px;
+}
+
+    /*====================================================
+     * =================== COURSE SUMMARY
+     =====================================================*/
+    .tt-course-summary {
+        padding: 10px 0px;
+    }
+
+    .tt-course-summary h4 {
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .tt-course-summary p {
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    /*====================================================
+     * =================== SUBJECT DETAILS
+     =====================================================*/
+    .tt-subject {
+
+    }
+
+    .tt-subject .media {
+        position: relative;
+        background: #fff;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 3px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 3px;
+        height: 55px;
+        border: 2px solid #fff;
+        box-shadow: 1px 1px 2px #aaa;
+        margin-left: 100px;
+    }
+
+    .tt-subject .media img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .tt-subject .media h6 {
+        color: #AEBDC1;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-top: 5px;
+    }
+
+    .tt-subject .media p {
+        color: #50C3EE;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .tt-subject .media p a {
+        color: #50C3EE;
+        transition: 0.5s;
+    }
+
+    .tt-subject .media p a:hover {
+        color: #3C92B3;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    .tt-subject .media .media-right {
+        min-width: 100px;
+        vertical-align: middle;
+        padding-right: 10px;
+    }
+
+    .tt-subject .media .media-right a {
+        border: 1px;
+        border-radius: 15px;
+        transition: 0.4s;
+    }
+
+    .tt-subject .media .media-right a:hover {
+        transition: 0.4s;
+    }
+
+
+/*====================================================
+ * =================== TRAINER SUMMARY
+ =====================================================*/
+.tt-trainer-summary {
+    padding-top: 20px;
+    padding-left: 100px;
+    text-align: center;
+}
+
+.tt-trainer-summary div {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 1px #aaa;
+    padding-top: 24px;
+}
+
+.tt-trainer-summary div img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    opacity: 0.6;
+    margin-bottom: 24px;
+}
+
+.tt-trainer-summary h6 {
+    color: #AEBDC1;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.tt-trainer-summary p {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.tt-trainer-summary ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tt-trainer-summary ul li {
+    border-top: 1px solid #eee;
+    padding: 10px;
+}
+
+.tt-trainer-summary ul li a {
+    color: #333;
+    transition: 0.4s;
+    font-weight: 600;
+}
+
+.tt-trainer-summary ul li a:hover {
+    color: #2298CC;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+/*====================================================
+ * =================== TRAINER
+ =====================================================*/
+.tt-trainer {
+    padding-left: 100px;
+    padding-top: 20px;
+}
+
+.tt-trainer h4 {
+    color: #AEBDC1;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.tt-trainee-list {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.tt-trainee-list .media {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    box-shadow: 1px 1px 1px #eee;
+    margin-left: 10px;
+    transition: 0.4s;
+}
+
+.tt-trainee-list .media img {
+    width: 25px;
+    height: 25px;
+}
+
+.tt-trainee-list .media .media-body {
+    vertical-align: middle;
+}
+
+.tt-trainee-list .media h6 a {
+    font-size: 12px;
+    color: #8A9699;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.tt-trainee-list .media:hover {
+    background: #2298CC;
+    transition: 0.4s;
+}
+
+.tt-trainee-list .media:hover h6 a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+
+/*====================================================
+ * =================== FOOTER
+ =====================================================*/
+.tt-footer {
+    background: #2D3033;
+    color: #899B9F;
+    font-size: 12px;
+    padding: 40px 0px;
+}
+
+.tt-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tt-footer ul li a {
+    color: #899B9F;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+.tt-footer ul li a:hover {
+    text-decoration: none;
+    color: #eee;
+    transition: 0.4s;
+}
+
+.tt-footer ul li {
+    margin: 10px 0px;
+}
+
+.tt-footer .tt-social li {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.tt-footer .tt-social li a {
+    background: #899B9F;
+    width: 24px !important;
+    height: 24px !important;
+    display: table-cell;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tt-footer .tt-social li a:hover {
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+.tt-footer .tt-social i {
+    color: #2D3033;
+}
+
+.tt-footer-border {
+    border-right: 1px solid #B0C7CC;
+}
+
+/*====================================================
+ * =================== RESPONSIVE
+ =====================================================*/
+@media (max-width: 400px) {
+    .tt-subject .media-body {
+        vertical-align: middle;
+    }
+
+    .tt-subject .media-body p {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .tt-subject .media-right a {
+
+    }
+}
+
+@media (max-width: 767px) {
+    .tt-subject .media {
+        margin-left: 0;
+    }
+
+    .tt-trainer {
+        padding-left: 0;
+    }
+}
+
